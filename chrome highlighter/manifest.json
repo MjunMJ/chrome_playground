@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Keyword Highlighter",
+    "version": "1.0",
+    "description": "Highlights keywords from a Google Sheet",
+    "permissions": [
+      "activeTab",
+      "scripting",
+      "storage" // You might need this
+      // Potentially "https://sheets.googleapis.com/"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "pen.png"
+    }
+  }
